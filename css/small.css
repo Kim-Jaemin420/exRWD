@@ -3,11 +3,66 @@ body {
   font-size: 1.5rem;
   background-color: pink;
 }
+/* 
+공통 레이아웃
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+.appFooter {
+  width: 100%;
+}
+공통 헤더
+.appHeader {
+  background-color: silver;
+  display: grid;
+}
+공통 멤버 링크
+.memberOnly {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}  */
+
 /* 모바일 레이아웃 */
 .appHeader, .appMain {
   width: 100%;
 }
 /* 모바일 헤더 */
+.appHeader {
+  grid-template: auto / 1fr;
+  background-color: #38302e;
+}
+.brand, .memberOnly, .searchForm {
+  padding: 10px 20px;
+}
+/* 모바일 브랜드 */
+.brand *{
+  display: block;
+
+}
+/* 모바일 멤버 링크 */
+.memberOnly {
+  order: -1;
+  background-color: #988574;
+  color: #fff;
+}
+/* 모바일 검색 폼 */
+.buttonSearch {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  padding: 0;
+}
+input[type="search"] {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 5px;
+  height: 35px;
+  width: calc(100% - 45px);
+  margin-right: 5px;
+}
 /* 모바일 네비게이션 */
 .appNavigation {
   position: fixed;
@@ -18,4 +73,5 @@ body {
   transform: translateX(-100%);
 }
 /* 모바일 메인 콘텐츠 */
+
 /* 모바일 푸터 */
