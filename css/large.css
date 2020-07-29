@@ -1,8 +1,28 @@
 /* 데스크탑 기본 글자 크기 */
 body {
   font-size: 1.4rem;
-  background-color: yellow;
 }
+/* 공통 레이아웃
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+.appFooter {
+  width: 100%;
+}
+공통 헤더
+.appHeader {
+  background-color: silver;
+  display: grid;
+}
+공통 멤버 링크
+.memberOnly {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+} */
+
 /* 데스크탑 레이아웃 */
 .container {
   justify-content: center;
@@ -26,7 +46,20 @@ body {
 /* 데스크탑 검색 폼 */
 .searchForm {
   grid-area: 2/2/3/3;
-  text-align: right;
+  /* text-align: right; */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+.searchForm fieldset {
+  display: contents;
+}
+.buttonSearch {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 2px 10px;
+  background-color: #988574;
+  color: #fff;
 }
 /* 데스크탑 내비게이션 */
 .appNavigation {
