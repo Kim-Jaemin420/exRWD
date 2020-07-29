@@ -207,7 +207,7 @@ legend,
   flex-flow: row wrap;
   box-sizing: border-box;
 }
-.appFooter {
+.appFooter, .appNavigation {
   width: 100%;
 }
 /* 공통 헤더 */
@@ -229,11 +229,6 @@ input[type="search"] {
   border-radius: 5px;
   padding: 2px 5px;
   height: 35px;
-}
-/* 공통 내비게이션 */
-.appNavigation {
-  background-color: purple;
-  
 }
 /* 공통 메인 콘텐츠 */
 .appMain {
