@@ -71,16 +71,15 @@ body {
   background: transparent url(./images/btn_search.png) 0 0 /cover no-repeat scroll;
 
 }
-input[type="search"] {
+/* input[type="search"] {
   width: calc(100% - 45px);
   margin-right: 5px;
-}
+} */
 /* 모바일 네비게이션 */
 /* 모바일 메뉴 제어 버튼 */
 .buttonBurger {
   width: 35px;
   height: 35px;
-  border: 1px solid;
   position: absolute;
   top: 60px;
   right: 20px;
@@ -128,7 +127,40 @@ input[type="search"] {
   left: 0;
   width: 70vw;
   height: 100vh;
-  transform: translateX(-100%);
+  transform: translateX(-105%);
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(3px);
+  padding: 20px;
+}
+/* .menu__item {
+  display: flex;
+  flex-flow: row wrap;
+} */
+.menu__link {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100% - 1.5em);
+}
+.menu__subMenu {
+  font-size: 1.6rem;
+  display: none;
+  width: 100%;
+}
+.menu__subMenu li {
+  margin: 10px 0;
+}
+.menu__subMenu a {
+  display: block;
+  padding: 5px 0;
+}
+.menuAct .menu__subMenu {
+  display: block;
+}
+.isAct .menu__list {
+  transform: none;
 }
 /* 모바일 메인 콘텐츠 */
 .appMain {
