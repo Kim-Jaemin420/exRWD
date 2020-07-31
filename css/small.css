@@ -48,6 +48,10 @@ body {
   color: #fff;
 }
 /* 모바일 검색 폼 */
+input[type="search"] {
+  width: calc(100% - 45px);
+  margin-right: 5px;
+}
 .buttonSearch {
   width: 35px;
   height: 35px;
@@ -71,10 +75,6 @@ body {
   background: transparent url(./images/btn_search.png) 0 0 /cover no-repeat scroll;
 
 }
-/* input[type="search"] {
-  width: calc(100% - 45px);
-  margin-right: 5px;
-} */
 /* 모바일 네비게이션 */
 /* 모바일 메뉴 제어 버튼 */
 .buttonBurger {
@@ -96,7 +96,17 @@ body {
 .round {
   border-radius: 20px;
 }
-
+.positionTop {
+  top: 0;
+}
+.positionMiddle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.positionBottom {
+  top: 100%;
+  transform: translateY(-100%);
+}
 .isAct .positionTop {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
@@ -108,18 +118,6 @@ body {
 .isAct .positionBottom {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
-
-}
-.positionTop {
-  top: 0;
-}
-.positionMiddle {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.positionBottom {
-  top: 100%;
-  transform: translateY(-100%);
 }
 .menu__list {
   position: fixed;
@@ -164,32 +162,13 @@ body {
 }
 /* 모바일 메인 콘텐츠 */
 .appMain {
-  padding: 0 20px;
+  padding: 10px 20px;
   display: flex;
   flex-flow: row wrap;
 }
-.appMain * {
-  height: 10vh;
+.book, .news, .board, .fovorite, .twitter {
   width: 100%;
-}
-.book {
-  background-color: yellow;
- 
-}
-.news {
-  background-color: green;
-  
-}
-.board {
-  background-color: red;
-  
-}
-.favorite {
-  background-color: coral;
-  
-}
-.twitter {
-  background-color: violet;
-  
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* 모바일 푸터 */
